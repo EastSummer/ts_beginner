@@ -20,7 +20,7 @@
     * tsc xx.ts (eg: hello.ts -> hello.js)
 3. 自动编译
     * webstorm
-        1.Configure->TypeScript->Enable->Apply/OK
+        1. Configure->TypeScript->Enable->Apply/OK
     * vscode
         1. F1/Ctrl+Shift+P -> configure task -> 生成tasks.json
         2. tsc --init -> 生成tsconfig.json

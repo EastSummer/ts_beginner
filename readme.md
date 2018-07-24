@@ -1,13 +1,13 @@
 ### TypeScript入门
 
 ### ts 
-> 微软Micros开发
-> js的超集
-> 遵循es6
-> Angular的开发语言
+> 微软Micros开发  
+> js的超集  
+> 遵循es6  
+> Angular的开发语言  
 
 ### ts优势
-1. 支持es6
+1. 支持[ES6](http://es6.ruanyifeng.com/)
 2. 支持类型检查
 3. 实现了注解、泛型等特性
 

@@ -17,10 +17,10 @@ let octalLiteral: number = 0o744;
 let myName: string = "bob";
 myName = "smith";
 // 多行表达式 & 字符串模板
-let age: number = 37;
+let myAge: number = 37;
 let sentence: string = `
     Hello, my name is ${ myName }.
-    I'll be ${ age + 1 } years old next month.
+    I'll be ${ myAge + 1 } years old next month.
 `;
 // 自动拆分字符串
 function test(template, name, age){
@@ -28,8 +28,8 @@ function test(template, name, age){
     console.log(name)
     console.log(age)
 }
-let myAge = () => {return 18}
-test`hello my name is ${myName}, i'm ${myAge()}`
+let myAgeFuc = () => {return 18}
+test`hello my name is ${myName}, i'm ${myAgeFuc()}`
 // ["hello my name is ", ", i'm ", ""]
 // smith
 // 18

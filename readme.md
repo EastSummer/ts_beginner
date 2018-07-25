@@ -39,4 +39,9 @@
 ### IMOOC-React
 https://www.imooc.com/learn/763
 
+### 参考文档
+> https://www.tslang.cn/docs/home.html  (当前看到：手册指南->类(未读))
+> https://ts.xcatliu.com/advanced/generics.html  
+
+
 > vscode Ctrl+Shift+V 预览MD

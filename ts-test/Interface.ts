@@ -39,15 +39,15 @@ interface Point {
 let p1: Point = { x: 10, y: 20 };
 // p1.x = 5;    // error!
 // TypeScript具有ReadonlyArray<T>类型，它与Array<T>相似，只是把所有可变方法去掉了，因此可以确保数组创建后再也不能被修改：
-let a: number[] = [1, 2, 3, 4];
-let ro: ReadonlyArray<number> = a;
+let ao: number[] = [1, 2, 3, 4];
+let ro: ReadonlyArray<number> = ao;
 /** error!
  * ro[0] = 12;
  * ro.push(5);
  * ro.length = 100;
  * a = ro;
  */
-a = ro as number[]; // 用类型断言重写
+ao = ro as number[]; // 用类型断言重写
 
 // 描述函数类型
 interface SearchFunc {

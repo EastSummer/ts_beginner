@@ -1,47 +1,18 @@
-### TypeScript入门
+## 本 repo 为课程第二章  Typescript 入门源代码
 
-### ts 
-> 微软Micros开发  
-> js的超集  
-> 遵循es6  
-> Angular的开发语言  
+本 repo 为课程第二章 Typescript 入门源代码, 注意这个 repo 是仅仅是相对独立的课程第二章的源代码，如果要找整个组件库代码，去另外一个项目：zheye
 
-### ts优势
-1. 支持[ES6](http://es6.ruanyifeng.com/)
-2. 支持类型检查
-3. 实现了注解、泛型等特性
+commits 按照教学顺序倒序排列，最新的小节是最上面的提交，以此类推。大家可以注意看 commit 的描述，非常详细的描述了每次的修改。
 
-### ts compiler onlie
-> [TypeScript官网->Playground](http://www.typescriptlang.org/play/index.html)
-
-### ts compiler local
-1. npm install typescript -g
-2. 手动编译
-    * tsc xx.ts (eg: hello.ts -> hello.js)
-3. 自动编译
-    * webstorm
-        1. Configure->TypeScript->Enable->Apply/OK
-    * vscode
-        1. F1/Ctrl+Shift+P -> configure task -> 生成tasks.json
-        2. tsc --init -> 生成tsconfig.json
-        3. edit tsconfig.json -> 法一: Ctrl+Shift+B -> 构建&监视
-        4. [edit tasks.json](https://code.visualstudio.com/docs/editor/tasks) -> 法二: Ctrl+Shift+B -> 直接构建
-        5. 调试 -> Ctrl+Shift+D -> 单击调试视图顶部栏上的配置齿轮图标 -> node.js
-        6. [edit launch.json](https://code.visualstudio.com/docs/editor/debugging)
-    > 参考
-    > https://segmentfault.com/a/1190000011935122
-    > https://blog.csdn.net/tiantangyouzui/article/details/52163175
-    > https://www.jianshu.com/p/8402469f1cae
-
-### ts vscode 插件
-![pic](./464752.png)
-
-### IMOOC-React
-https://www.imooc.com/learn/763
-
-### 参考文档
-> https://www.tslang.cn/docs/home.html  (当前看到：手册指南->类(未读))
-> https://ts.xcatliu.com/advanced/generics.html  
+在开始学习之前，强烈建议大家看一下课程的 1-2 小节，讲述应该怎样使用源代码帮助大家学习。
 
 
-> vscode Ctrl+Shift+V 预览MD
+## 课程与服务
+
+* **项目演示站点：[http://zhihu.vikingship.xyz/](http://zhihu.vikingship.xyz/)**
+* 在线后端API 查询和使用站点：[http://api.vikingship.xyz/](http://api.vikingship.xyz/)
+* 项目在线文档：[http://docs.vikingship.xyz/](http://docs.vikingship.xyz/)
+* 完成的组件库展示：[http://showcase.vikingship.xyz/](http://showcase.vikingship.xyz/)
+* 流程图和原型图
+* 购买后直接可以接入使用的真实后端API
+* **如果您想学习本课程，请支持正版，谢谢！ [https://coding.imooc.com/class/449.html](https://coding.imooc.com/class/449.html)**

@@ -4,7 +4,7 @@
  * @Author: chenpengfei
  * @Date: 2021-07-28 14:40:45
  * @LastEditors: chenpengfei
- * @LastEditTime: 2021-07-28 16:29:24
+ * @LastEditTime: 2021-07-29 10:03:46
  * 官方Api https://jestjs.io/docs/expect
  */
 
@@ -72,22 +72,22 @@
 
 
 // String相关
-test('正则表达式的字符', () => {
-  // toMatch 匹配器
-  const str = 'http://www.baidu.com'
-  // expect(str).toMatch('baidu');
-  expect(str).toMatch(/baidu/);
-})
+// test('正则表达式的字符', () => {
+//   // toMatch 匹配器
+//   const str = 'http://www.baidu.com'
+//   // expect(str).toMatch('baidu');
+//   expect(str).toMatch(/baidu/);
+// })
 
 
 // Array Set 相关
-test('数组匹配器', () => {
-  // toContain 匹配器 包含
-  const arr = ['a', 'b', 'c']
-  const set = new Set(arr)
-  expect(arr).toContain('c');
-  expect(set).toContain('c');
-})
+// test('数组匹配器', () => {
+//   // toContain 匹配器 包含
+//   const arr = ['a', 'b', 'c']
+//   const set = new Set(arr)
+//   expect(arr).toContain('c');
+//   expect(set).toContain('c');
+// })
 
 
 // 异常 相关

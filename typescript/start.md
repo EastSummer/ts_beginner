@@ -1,9 +1,40 @@
-动态类型语言(Dynamically Typed Language) js ruby python
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: chenpengfei
+ * @Date: 2021-07-28 16:46:34
+ * @LastEditors: chenpengfei
+ * @LastEditTime: 2022-11-21 15:17:41
+-->
+[IMooc Doc](https://www.imooc.com/wiki/vue3zhihu/c2.html)
+
+动态类型语言(Dynamically Typed Language) js ruby python  
 静态类型语言(Statically Typed Language) c c++ c# java
 
-Interface 接口
-1. 对对象的形状shape进行描述
-2. Duck Typing 鸭子类型
+Typescript 官网地址: https://www.typescriptlang.org/zh/
+使用 nvm 来管理 node 版本: https://github.com/nvm-sh/nvm
+```ts
+// 安装Typescript
+npm install -g typescript
+// 使用 tsc 全局命令
+// 查看 tsc 版本
+tsc -v
+// 编译 ts 文件
+tsc fileName.ts
+```
+
+### 目录
+#### [原始数据类型和 Any 类型](./basic-types.ts)
+#### [数组和元组](./array-and-tuple.ts)
+#### [原始数据类型和 Any 类型](./array-and-tuple.ts)
+#### [interface 接口](./interface-basic.ts)
+#### [function 函数](./function-types.ts)
+#### [类型推论，联合类型 和 类型断言](./type-inference-and-more.ts)
+#### [枚举 Enums](./enums.ts)
+#### [泛型 Generics](./generics.ts)
+
+
+---
 
 Utility Types
 1. [官方Doc](https://www.typescriptlang.org/docs/handbook/utility-types.html)

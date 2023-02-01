@@ -4,7 +4,7 @@
  * @Author: chenpengfei
  * @Date: 2021-07-28 16:46:34
  * @LastEditors: chenpengfei
- * @LastEditTime: 2023-01-17 09:38:44
+ * @LastEditTime: 2023-02-01 16:57:10
 -->
 [IMooc Doc](https://www.imooc.com/wiki/vue3zhihu/c2.html)
 
@@ -35,6 +35,7 @@ tsc fileName.ts
 #### [类型别名 和 交叉类型](./type-alias.ts)
 #### [声明文件](./declaration-files.ts)
 #### [内置类型](./built-in-types.ts)
+#### [配置文件](https://www.typescriptlang.org/tsconfig)
 
 
 ---

@@ -4,7 +4,7 @@
  * @Author: chenpengfei
  * @Date: 2021-07-28 16:46:33
  * @LastEditors: chenpengfei
- * @LastEditTime: 2022-11-21 16:45:36
+ * @LastEditTime: 2022-11-22 14:32:18
  */
 
 /**
@@ -49,20 +49,51 @@ const result3 = echoWithLength({length: 10})
 const result4 = echoWithLength([1, 2, 3])
 const result5 = echoWithLength(123)
 
-
-class Queue<T> {
-  private data = [];
-  push(item: T) {
+/**
+ * 泛型与类和接口
+ * 
+ */
+// 需要一个出入一致的队列，即入为string|number，出也为string|number
+class Queue1 {
+  private data = []
+  push(item) {
     return this.data.push(item)
   }
-  pop(): T {
+  pop() {
     return this.data.shift()
   }
 }
-const queue = new Queue<number>()
-queue.push(1)
-console.log(queue.pop().toFixed())
-
+const queue1 = new Queue1()
+queue1.push('1')
+queue1.push('str')
+const popedVal = queue1.pop()
+if (popedVal) {
+  console.log(popedVal.toFixed())
+}
+// 在上述代码中存在一个问题，它允许你向队列中添加任何类型的数据
+// 当然，当数据被弹出队列时，也可以是任意类型。
+// 若是只给定一种类型，则毫无通用性可言
+class Queue2<T> {
+  private data: T[] = [];
+  push(item: T) {
+    return this.data.push(item)
+  }
+  // 把 pop 返回的类型去掉，让自动推论推断返回的类型：应该是 T 或者 undefined
+  // pop(): T {
+  pop() {
+    return this.data.shift()
+  }
+}
+const queue2 = new Queue2<number>()
+queue2.push(1)
+console.log(queue2.pop().toFixed())
+// 先拿出值来，应该是 number | undefined 类型
+const popedValue = queue2.pop()
+if (popedValue) {
+  // 有值的时候再调用对应的方法
+  console.log(popedValue.toFixed())
+}
+// 泛型和 interface
 interface KeyPair<T, U> {
   key: T
   value: U 
@@ -70,6 +101,7 @@ interface KeyPair<T, U> {
 let kp1: KeyPair<number, string> = { key: 1, value: "string"}
 let kp2: KeyPair<string, number> = { key: 'str', value: 2 }
 let arr: number[] = [1,2,3]
+// Array为内置泛型
 let arrTwo: Array<number> = [1,2,3]
 
 
@@ -82,3 +114,5 @@ let arrTwo: Array<number> = [1,2,3]
 const foo1 = <T extends {}>(x: T) => x;
 // 还可以添加一个逗号，也等于是破坏了 eslint 将它作为一个标签检验
 const foo2 = <T, >(x: T) => x;
+// 已修复
+const foo3 = <T>(x: T) => x;
